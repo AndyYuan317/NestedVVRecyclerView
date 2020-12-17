@@ -1,6 +1,6 @@
 ## NestedRecyclerView
 
-[仿淘宝、京东首页，通过两层嵌套的RecyclerView实现tab的吸顶效果](https://juejin.im/post/5d5f4cfcf265da03e61b18b8)
+[仿淘宝、京东首页，通过两层嵌套的RecyclerView实现tab的吸顶效果](https://blog.csdn.net/qq_42618969?spm=1001.2014.3001.5113)
 
 ### 现已提供Java和Kotlin两种版本，具体可查看项目代码。
 
