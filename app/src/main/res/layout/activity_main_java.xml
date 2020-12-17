@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.andyyuan.nestedvvrecyclerview.java.view.StoreSwipeRefreshLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/swipeRefreshLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
+
+    <!--    android:focusable="true"
+            android:focusableInTouchMode="true"
+            出现滚动的时候在外层获取焦点来实现初始化后的自动滚动-->
+    <com.andyyuan.nestedvvrecyclerview.java.view.ParentRecyclerView
+        android:id="@+id/javaRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:overScrollMode="never" />
+
+</com.andyyuan.nestedvvrecyclerview.java.view.StoreSwipeRefreshLayout>
+<!--    <com.scwang.smartrefresh.layout.SmartRefreshLayout-->
+<!--        xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--        xmlns:app="http://schemas.android.com/apk/res-auto"-->
+<!--        android:id="@+id/refreshLayout"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        app:srlEnablePreviewInEditMode="false"-->
+<!--        android:focusable="true"-->
+<!--        android:focusableInTouchMode="true">-->
+
+<!--        <com.scwang.smartrefresh.layout.header.ClassicsHeader-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            app:srlAccentColor="@android:color/black" />-->
+
+<!--        <com.andyyuan.nestedrecyclerview.java.view.ParentRecyclerView-->
+<!--            android:id="@+id/javaRecyclerView"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:overScrollMode="never" />-->
+
+<!--    </com.scwang.smartrefresh.layout.SmartRefreshLayout>-->

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/fragment_textview"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="#ef1717"
+        android:gravity="center"
+        android:text="Fragment"
+        android:visibility="gone"/>
+
+    <com.andyyuan.nestedvvrecyclerview.java.view.ChildRecyclerView
+        android:id="@+id/fragment_recycler"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:overScrollMode="always"/>
+
+</LinearLayout>

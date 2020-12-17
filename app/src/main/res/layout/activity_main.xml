@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.andyyuan.nestedvvrecyclerview.kotlin.StoreSwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/swipeRefreshLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <com.andyyuan.nestedvvrecyclerview.kotlin.ParentRecyclerView
+            android:id="@+id/kttRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:overScrollMode="never" />
+
+</com.andyyuan.nestedvvrecyclerview.kotlin.StoreSwipeRefreshLayout>
