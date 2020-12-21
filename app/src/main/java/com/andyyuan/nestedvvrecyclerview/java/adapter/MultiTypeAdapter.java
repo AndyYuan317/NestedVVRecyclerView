@@ -20,7 +20,7 @@ import java.util.ArrayList;
  * desc   : 主界面中的ParentAdapter 子item都放在该层中显示，子recyclerView放在最后一个item中
  * version: 2.0
  */
-public class MultiTypeAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
+public class MultiTypeAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> implements MultiMainTypeAdapter{
     private ArrayList<Object> mDataList;
     private ArrayList<String> mChildDataList;
 
@@ -97,12 +97,21 @@ public class MultiTypeAdapter extends RecyclerView.Adapter<RecyclerView.ViewHold
         return mDataList.size();
     }
 
+
+    @Override
     public ChildRecyclerView getCurrentChildRecyclerView() {
         if (mCategoryViewHolder != null) {
             return mCategoryViewHolder.getCurrentChildRecyclerView();
         }
         return null;
     }
+//    public ChildRecyclerView getCurrentChildRecyclerView() {
+//        if (mCategoryViewHolder != null) {
+//            return mCategoryViewHolder.getCurrentChildRecyclerView();
+//        }
+//        return null;
+//    }
+
 
     public void destroy() {
         if (mCategoryViewHolder != null) {
