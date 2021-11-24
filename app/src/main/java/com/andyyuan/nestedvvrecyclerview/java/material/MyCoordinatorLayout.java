@@ -29,7 +29,7 @@ import android.view.ViewConfiguration;
 public class MyCoordinatorLayout extends CoordinatorLayout implements NestedScrollingParent2 {
 
     //滑动
-    private boolean isNeedScroll = true;
+    private boolean isNeedScroll = false;
     private float xDistance, yDistance, xLast, yLast;
     private int scaledTouchSlop;
     private boolean mNeedsPreDrawListener;
@@ -56,10 +56,10 @@ public class MyCoordinatorLayout extends CoordinatorLayout implements NestedScro
         this.isNeedScroll = isNeedScroll;
         if (isNeedScroll) {
             //Log.e("SiberiaDante------->>>>","父控件拦截事件");
-            getParent().requestDisallowInterceptTouchEvent(false);
+            //getParent().requestDisallowInterceptTouchEvent(false);
         }else {
             //Log.e("SiberiaDante------->>>>","父控件not拦截事件");
-            getParent().requestDisallowInterceptTouchEvent(true);
+            //getParent().requestDisallowInterceptTouchEvent(true);
         }
     }
     public boolean onTouchEvent(MotionEvent ev) {
